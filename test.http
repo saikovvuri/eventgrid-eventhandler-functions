@@ -1,0 +1,7 @@
+@functionName = EventGridTriggerTest
+@host = localhost:7071/runtime/webhooks/eventgrid?functionname={{functionName}}
+
+
+POST http://{{host}}
+Content-Type: application/json
+aeg-event-type: Notification
